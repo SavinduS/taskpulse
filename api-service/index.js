@@ -13,6 +13,6 @@ app.post('/tasks', async (req, res) => {
     return res.status(201).json({ message: "Task queued successfully!" });
 });
 
-app.get('/health', (req, res) => res.send("API is Healthy"));
+app.get('/health', (req, res) => res.send("API is Healthy - V2 with CI/CD!"));
 
 app.listen(3000, () => console.log("API Service running on port 3000"));
